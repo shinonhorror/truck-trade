@@ -1,0 +1,67 @@
+html {
+	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	font-size: inherit;
+}
+
+ul[class] {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+body {
+	background-color: #F2F2F2;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Gilroy-Bold', sans-serif;
+	font-weight: 800;
+	line-height: 85px;
+  font-size: 75.763px;
+}
