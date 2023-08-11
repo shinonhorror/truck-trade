@@ -3,6 +3,7 @@
 	justify-content: center;
 	min-height: 100%;
 	flex-direction: column;
+	margin-top: 1.25rem;
 }
 
 .container {
@@ -86,6 +87,9 @@
 	font-size: 1.25rem;
 	font-weight: 300;
 	line-height: 1.25rem;
+	border: none;
+	cursor: pointer;
+	padding: 0;
 }
 
 .lang__list-link:hover {
@@ -103,6 +107,7 @@
 	justify-content: space-between;
 	margin-top: 2.219rem;
 	margin-bottom: 5.375rem;
+	width: 100%;
 }
 
 .main__about {
@@ -110,40 +115,14 @@
 	display: none;
 }
 
-.active-main {
-	display: flex;
-	animation-name: open;
-	animation-duration: 0.8s;
-	animation-timing-function: ease;
-	animation-fill-mode: forwards;
-	animation-delay: 0s;
-}
-
-@keyframes open {
-	0% {
-		display: flex;
-		flex-direction: column;
-		opacity: 0;
-		transform: translateX(-50%);
-		visibility: hidden;
-	}
-	100% {
-		display: flex;
-		flex-direction: column;
-		opacity: 1;
-		visibility: visible;
-	}
-}
-
-.main__about.show {
-	transition: 1s;
-	transform: translateY(0%);
+.text__slider {
+	width: 40%;
 }
 
 .main__about-title {
 	max-width: 52rem;
-	font-size: 55px;
-	line-height: 60px;
+	font-size: 3.438rem;
+	line-height: 3.75rem;
 }
 
 .main__about-desc {
@@ -176,9 +155,8 @@
 
 .main__slider {
 	margin-left: 5rem;
-	width: 100%;
+	width: 56.25rem;
 	box-sizing: border-box;
-	max-width: 50rem;
 }
 
 .slick-slide img {
@@ -208,7 +186,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	max-width: 55rem;
-	margin-bottom: 10px;
+	margin-bottom: 0.625rem;
 }
 
 .activity__list,
@@ -343,7 +321,7 @@
 	height: 26.688rem;
 	border-radius: 0.625rem;
 	border: 0.063rem solid #0a8f3f;
-	box-shadow: 0px 0px 3.125rem 0px rgba(222, 222, 222, 0.2);
+	box-shadow: 0rem 0rem 3.125rem 0rem rgba(222, 222, 222, 0.2);
 	margin-left: 10.125rem;
 	overflow: hidden;
 }
@@ -456,51 +434,48 @@
 		padding-left: 17.5rem;
 	}
 	.menu__list-item {
-		padding: 1px 20px;
+		padding: 0.063rem 1.25rem;
 	}
 	.container {
-		max-width: 1500px;
+		max-width: 93.75rem;
 	}
 	.main__slider {
-		width: 900px;
+		width: 50rem;
 	}
 	.geolocation__title,
 	.activity__title,
 	.advantage__title,
 	.contact__title,
 	.about__title {
-		font-size: 40px;
-		line-height: 45px;
+		font-size: 2.5rem;
+		line-height: 2.813rem;
 		max-width: 48rem;
 	}
 	.activity__list,
 	.advantage__list {
-		gap: 50px;
+		gap: 3.125rem;
 	}
 }
 
 @media screen and (max-width: 1800px) {
 	.geolocation__info-map {
-		width: 900px;
+		width: 56.25rem;
 	}
 }
 
 @media screen and (max-width: 1600px) {
 	.menu {
-		padding-left: 200px;
-	}
-	.container {
-		max-width: 1350px;
+		padding-left: 12.5rem;
 	}
 	.menu__list-item {
-		padding: 1px 10px;
+		padding: 0.063rem 0.625rem;
 	}
 	.container {
-		max-width: 1400px;
+		max-width: 87.5rem;
 	}
 	.geolocation__info-map {
-		margin-left: 80px;
-		width: 780px;
+		margin-left: 5rem;
+		width: 48.75rem;
 	}
 	.about__back {
 		left: 50%;
@@ -511,11 +486,11 @@
 	}
 	.advantage__card-title,
 	.activity__card-title {
-		font-size: 28px;
+		font-size: 1.75rem;
 	}
 	.advantage__list-card,
 	.activity__list-card {
-		width: 420px;
+		width: 26.25rem;
 	}
 	.contact__back {
 		left: 50%;
@@ -525,13 +500,13 @@
 		height: 120%;
 	}
 	.main__slider {
-		width: 700px;
+		width: 43.75rem;
 	}
 	.slick-slide img {
-		height: 520px;
+		height: 32.5rem;
 	}
 	.footer__inner {
-		gap: 50px;
+		gap: 3.125rem;
 	}
 }
 
@@ -539,22 +514,22 @@
 	.menu,
 	.lang,
 	.logo__desc {
-		padding-left: 60px;
+		padding-left: 3.75rem;
 	}
 	.main__about-desc {
-		font-size: 24px;
+		font-size: 1.5rem;
 	}
 	.geolocation__title,
 	.activity__title,
 	.advantage__title,
 	.contact__title,
 	.about__title {
-		font-size: 38px;
-		line-height: 43px;
+		font-size: 2.375rem;
+		line-height: 2.688rem;
 	}
 	.main__about-title {
-		font-size: 50px;
-		line-height: 55px;
+		font-size: 3.125rem;
+		line-height: 3.438rem;
 	}
 	.activity__card-desc,
 	.advantage__card-desc {
@@ -562,12 +537,12 @@
 	}
 	.advantage__card-title,
 	.activity__card-title {
-		font-size: 24px;
+		font-size: 1.5rem;
 		padding: 0 3rem;
 	}
 	.advantage__list-card,
 	.activity__list-card {
-		width: 360px;
+		width: 22.5rem;
 	}
 	.geolocation__info {
 		flex-direction: column;
@@ -576,16 +551,16 @@
 	}
 	.geolocation__info-map {
 		margin: 0;
-		margin-top: 30px;
+		margin-top: 1.875rem;
 	}
 	.container {
-		max-width: 1180px;
+		max-width: 73.75rem;
 	}
 	.main__slider {
-		width: 600px;
+		width: 37.5rem;
 	}
 	.slick-slide img {
-		height: 420px;
+		height: 26.25rem;
 	}
 }
 
@@ -594,49 +569,59 @@
 		display: none;
 	}
 	.container {
-		max-width: 900px;
+		max-width: 56.25rem;
+	}
+	.text__slider {
+		width: 100%;
 	}
 	.main__inner {
 		display: flex;
 		flex-direction: column;
-
 		align-items: center;
 	}
 	.main__about {
-		margin-top: 0;
-		text-align: center;
-		align-items: center;
-		width: 100%;
+		margin: 0 auto;
 	}
 	.main__slider {
 		width: 100%;
 		margin: 0;
 	}
+	.main__about-title {
+		margin: 0 auto;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 0.938rem;
+	}
+	.main__about-desc {
+		margin: 0 auto;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 0.938rem;
+	}
 	.main__about-button {
-		margin: 0;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin: 0 auto;
+		margin-bottom: 0.938rem;
 	}
 }
 
 @media screen and (max-width: 900px) {
 	.menu,
 	.lang {
-		padding-left: 15px;
+		padding-left: 0.938rem;
 	}
 
 	.geolocation__info-map {
-		width: 600px;
+		width: 37.5rem;
 	}
 
 	.container {
-		max-width: 700px;
+		max-width: 43.75rem;
 	}
 	.main__slider {
 		width: 100%;
 	}
 	.logo__name {
-		font-size: 30px;
+		font-size: 1.875rem;
 	}
 
 	.geolocation__title,
@@ -644,19 +629,19 @@
 	.advantage__title,
 	.contact__title,
 	.about__title {
-		font-size: 35px;
-		line-height: 40px;
+		font-size: 2.188rem;
+		line-height: 2.5rem;
 	}
 	.main__about-title {
-		font-size: 45px;
-		line-height: 50px;
+		font-size: 2.813rem;
+		line-height: 3.125rem;
 	}
 	.about__desc {
-		font-size: 20px;
+		font-size: 1.25rem;
 	}
 
 	.about__inner {
-		margin-bottom: 80px;
+		margin-bottom: 5rem;
 	}
 
 	.main__about {
@@ -676,7 +661,7 @@
 
 	.footer__inner {
 		margin: 0;
-		margin-bottom: 30px;
+		margin-bottom: 1.875rem;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
@@ -689,7 +674,7 @@
 	}
 
 	.container {
-		max-width: 520px;
+		max-width: 32.5rem;
 	}
 
 	.main__slider {
@@ -698,7 +683,7 @@
 
 	.slick-slide img {
 		width: 100%;
-		height: 300px;
+		height: 18.75rem;
 	}
 	.header__inner {
 		align-items: center;
@@ -707,58 +692,58 @@
 	.main__about,
 	.main__inner {
 		margin-top: 0;
-		margin-bottom: 20px;
+		margin-bottom: 1.25rem;
 	}
 	.geolocation__info {
-		margin-top: 20px;
+		margin-top: 1.25rem;
 	}
 	.geolocation__info-map {
-		width: 400px;
+		width: 25rem;
 	}
 	.geolocation__title,
 	.activity__title,
 	.advantage__title,
 	.contact__title,
 	.about__title {
-		font-size: 30px;
+		font-size: 1.875rem;
 	}
 	.main__about-title {
-		font-size: 35px;
-		line-height: 40px;
+		font-size: 2.188rem;
+		line-height: 2.5rem;
 	}
 	.advantage__list-card,
 	.activity__list-card {
-		width: 350px;
+		width: 21.875rem;
 	}
 	.advantage__card-title,
 	.activity__card-title {
-		font-size: 24px;
-		line-height: 24px;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
 	}
 	.contact__form-input {
-		padding: 13px 60px 16px 30px;
+		padding: 0.813rem 3.75rem 1rem 1.875rem;
 	}
 	.geolocation__info-item {
-		padding: 15px 90px 15px 100px;
-		font-size: 20px;
+		padding: 0.938rem 5.625rem 0.938rem 6.25rem;
+		font-size: 1.25rem;
 	}
 	.geolocation__info-img {
-		width: 50px;
+		width: 3.125rem;
 	}
 	.geolocation__info-map {
-		width: 300px;
+		width: 18.75rem;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.container {
-		max-width: 400px;
+		max-width: 25rem;
 	}
 	.main__slider {
 		width: 100%;
 	}
 	.slick-slide img {
 		width: 100%;
-		height: 240px;
+		height: 15rem;
 	}
 }
