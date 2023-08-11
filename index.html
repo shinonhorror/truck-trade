@@ -11,6 +11,7 @@
 			rel="stylesheet"
 		/>
 		<link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link rel="stylesheet" href="assets/css/reset.css" />
 		<link
@@ -36,9 +37,6 @@
 						</div>
 						<nav class="menu" id="menu">
 							<ul class="menu__list">
-								<li class="menu__list-item">
-									<a href="#" class="menu__list-link">главная</a>
-								</li>
 								<li class="menu__list-item">
 									<a href="#about" class="menu__list-link">о нас</a>
 								</li>
@@ -67,16 +65,45 @@
 			<section class="main">
 				<div class="container">
 					<div class="main__inner">
-						<div class="main__about">
+						<div class="main__about active-main" id="main0">
 							<h1 class="main__about-title">
-								Добро пожаловать на сайт компании
+								Добро пожаловать <br />
+								на сайт компании
 								<span class="logo__name-active">TRUCK TRADE</span>
 							</h1>
 							<p class="main__about-desc">
 								Эксперты в поставках грузовых запчастей и шин по всему миру
 							</p>
 							<button class="main__about-button">
-								<a href="#" class="main__about-link">подробнее</a>
+								<a href="#about" class="main__about-link">подробнее</a>
+							</button>
+						</div>
+						<div class="main__about" id="main1">
+							<h1 class="main__about-title">
+								Полный цикл поставок - от производителя до
+								<span class="logo__name-active">вашего склада</span>
+							</h1>
+							<p class="main__about-desc">
+								Международные перевозки <br />
+								Оформление грузов <br />Специализация на поставках шин и
+								запчастей 
+							</p>
+							<button class="main__about-button">
+								<a href="#activity" class="main__about-link">подробнее</a>
+							</button>
+						</div>
+						<div class="main__about" id="main2">
+							<h1 class="main__about-title">
+								Почему выбирают<span class="logo__name-active"> нас?</span>
+							</h1>
+							<p class="main__about-desc">
+								Забота команды экспертов<br />
+								На связи персональный менеджер <br />Подбор и консультирование
+								<br />Прозрачность поставок <br />Гарантия сохранности груза
+								<br />Гарантия сроков поставки
+							</p>
+							<button class="main__about-button">
+								<a href="#advantage" class="main__about-link">подробнее</a>
 							</button>
 						</div>
 						<div class="main__slider">
@@ -90,7 +117,7 @@
 				</div>
 			</section>
 
-			<section class="activity">
+			<section class="activity" id="activity">
 				<div class="container">
 					<div class="activity__inner">
 						<h1 class="activity__title">Основные направления деятельности</h1>
@@ -103,9 +130,9 @@
 								/>
 								<h2 class="activity__card-title">Международные перевозки</h2>
 								<p class="activity__card-desc">
-									Индивидуальный подбор маршрута под каждую поставку
-									<span class="activity__card-highlight">все виды</span>
-									транспорта отслеживание поставки
+									Индивидуальный подбор маршрута под каждую поставку <br />
+									<span class="activity__card-highlight">Все виды</span>
+									транспорта <br />Отслеживание поставки
 								</p>
 							</div>
 							<div class="activity__list-card">
@@ -118,8 +145,8 @@
 								<p class="activity__card-desc">
 									Консультирование
 									<span class="activity__card-highlight">на всех этапах</span>
-									страхование груза подготовка документов для таможенного
-									оформления
+									<br />Страхование груза <br />Подготовка документов для
+									таможенного оформления
 								</p>
 							</div>
 							<div class="activity__list-card">
@@ -128,11 +155,11 @@
 									alt="activity__image"
 									class="activity__card-image"
 								/>
-								<h2 class="activity__card-title">Международные перевозки</h2>
+								<h2 class="activity__card-title">Поставка шин и запчастей</h2>
 								<p class="activity__card-desc">
-									Регулярное расширение ассортимента
-									<span class="activity__card-highlight"> все типы</span> шин
-									грузовые запчасти масла
+									Регулярное расширение ассортимента <br />
+									<span class="activity__card-highlight"> Все типы</span> шин
+									<br />Грузовые запчасти <br />Масла
 								</p>
 							</div>
 						</div>
@@ -169,7 +196,7 @@
 				/>
 			</section>
 
-			<section class="advantage">
+			<section class="advantage" id="advantage">
 				<div class="container">
 					<div class="advantage__inner">
 						<h1 class="advantage__title">Наши преимущества</h1>
@@ -262,7 +289,7 @@
 				</div>
 			</section>
 
-			<section class="geolocation">
+			<section class="geolocation" id="geolocation">
 				<div class="container">
 					<div class="geolocation__inner">
 						<h1 class="geolocation__title">География</h1>
@@ -293,9 +320,9 @@
 							<div class="geolocation__info-map">
 								<div style="position: relative; overflow: hidden">
 									<iframe
-										src="https://yandex.ru/map-widget/v1/?ll=71.426580%2C51.090692&mode=poi&poi%5Bpoint%5D=71.427342%2C51.100434&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D197306001962&z=15.76"
-										width='100%'
-										height='425'
+										src="https://yandex.ru/map-widget/v1/?ll=80.212124%2C50.452224&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzE2ODI4MhI10prQsNC30LDSm9GB0YLQsNC9LCDQkNCx0LDQuSDQvtCx0LvRi9GB0YssINCh0LXQvNC10LkiCg2cf6BCFbKeSUI%2C&z=10.95"
+										width="100%"
+										height="425"
 										style="position: relative"
 									></iframe>
 								</div>
@@ -359,9 +386,9 @@
 						</footer>
 						<footer class="footer__about">
 							<h3 class="footer__title">О компании</h3>
-							<a href="#" class="footer__item-link">связаться</a>
-							<a href="#" class="footer__item-link">преимущества</a>
-							<a href="#" class="footer__item-link">география</a>
+							<a href="#contact" class="footer__item-link">связаться</a>
+							<a href="#advantage" class="footer__item-link">преимущества</a>
+							<a href="#geolocation" class="footer__item-link">география</a>
 						</footer>
 					</div>
 				</div>
