@@ -100,6 +100,7 @@
 
 .main__inner {
 	display: flex;
+	justify-content: space-between;
 	margin-top: 2.219rem;
 	margin-bottom: 5.375rem;
 }
@@ -202,11 +203,9 @@
 .advantage__title,
 .contact__title {
 	text-transform: uppercase;
-	font-family: 'Gilroy-Bold', sans-serif;
 	text-align: center;
-	line-height: 5.313rem;
-	font-size: 4.625rem;
 	max-width: 61.25rem;
+	margin-bottom: 10px;
 }
 
 .activity__list,
@@ -473,8 +472,8 @@
 	.contact__title,
 	.main__about-title,
 	.about__title {
-		font-size: 60px;
-		line-height: 60px;
+		font-size: 48px;
+		line-height: 50px;
 	}
 	.activity__list,
 	.advantage__list {
@@ -545,7 +544,7 @@
 		padding-left: 60px;
 	}
 	.main__about-desc {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.geolocation__title,
 	.activity__title,
@@ -553,8 +552,8 @@
 	.contact__title,
 	.main__about-title,
 	.about__title {
-		font-size: 50px;
-		line-height: 50px;
+		font-size: 48px;
+		line-height: 48px;
 	}
 	.activity__card-desc,
 	.advantage__card-desc {
